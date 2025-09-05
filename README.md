@@ -15,8 +15,6 @@ Ultimately, I’m not just building software—I’m building experiences, proce
 
 ### 🛠️ Technologies & Tools
 
-### 🛠️ Technologies & Tools
-
 **Languages & Frameworks:**  
 <p>
   <a href="https://react.dev/" target="_blank">
