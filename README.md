@@ -75,7 +75,6 @@ Here are a few examples of my work:
 - **[Enterprise Portal](#)** – Full-stack portal built with **Next.js & MongoDB**, including API integrations and user dashboards.  
 - **[Marketplace Mobile App](#)** – Flutter-based app connecting sellers, buyers, and service providers.  
 
-*(Links can point to your GitHub repos once available)*  
 
 ---
 
