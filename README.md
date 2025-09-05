@@ -1,11 +1,15 @@
 ### Hi there, I'm Himanshu 👋  
 **Full-stack Engineer | DevOps & Cloud Enthusiast | Building resilient end-to-end systems**
 
-I'm a software engineer and lifelong tinkerer, driven by curiosity and a love for solving complex problems. Coding isn't just a job—it's my passion. I thrive on building elegant solutions, whether that's architecting a full-stack application, automating workflows, or diving deep into system security.  
+I’m a software engineer, lifelong tinkerer, and self-proclaimed problem-solver. Ever since I first flashed a custom ROM on my Android device back in 2016, I’ve been obsessed with understanding how things work under the hood. That curiosity led me down a path into system security, optimization, and eventually full-stack development.  
 
-My tech journey started in 2016, flashing custom ROMs on Android devices—sparking my interest in system optimization and security. Recently, I built a no-code automation pipeline with **n8n** to manage my entire job application process—from sorting emails to sending Slack reminders.  
+Coding for me isn’t just a profession—it’s a craft. I love taking complex, messy problems and transforming them into clean, reliable, and elegant solutions. Whether it’s architecting a full-stack enterprise system, automating repetitive workflows, or diving into the intricacies of cloud infrastructure and security, I thrive on the challenge of making things faster, safer, and more efficient.  
 
-I love to learn, I love to build, and I'm always chasing the next challenging problem.  
+I’m deeply drawn to high-pressure environments where every decision matters. In a recent role as the sole engineer at a startup, I was responsible for their entire digital ecosystem—from building APIs and managing databases to orchestrating deployments and securing live systems. In four months, I learned more than most learn in years, and it cemented my passion for creating resilient, end-to-end systems.  
+
+Outside of professional projects, I’m constantly exploring new tools and technologies. I recently built a no-code automation pipeline using **n8n** to manage my entire job application workflow—sorting emails, sending Slack reminders, and even tracking responses. I’m always tinkering, always learning, and always looking for the next challenge that pushes my skills further.  
+
+Ultimately, I’m not just building software—I’m building experiences, processes, and systems that make life easier for people, smarter for businesses, and more resilient for the world around me.
 
 ---
 
