@@ -89,12 +89,16 @@ export const EXPERIENCE_DATA: ExperienceItem[] = [
     {
         company: 'Ask Jay Services',
         role: 'Software Engineer (Contract)',
-        duration: 'May 2025 - Aug 2025',
+        duration: 'May 2025 - Oct 2025 (6 months)',
         logo: <AskJayLogo />,
         points: [
           {
             title: 'Flutter Marketplace Application',
             description: 'Architected and built a Flutter application from scratch with three user portals (Client, Subcontractor, Admin), implementing authentication and state management.',
+          },
+          {
+            title: 'AWS Hands-on Experience',
+            description: 'Gained 6 months of hands-on experience with AWS (EC2, S3, RDS) while working on the Ask Jay contract, provisioning infrastructure and managing deployments.',
           },
           {
             title: 'Mission-Critical Disaster Recovery',
