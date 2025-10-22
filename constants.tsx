@@ -20,6 +20,14 @@ const LightBulbIcon: React.FC<{className?: string}> = ({className}) => (
     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className={className || "w-6 h-6"}><path strokeLinecap="round" strokeLinejoin="round" d="M9.938 6.026a8.25 8.25 0 10-1.878 1.878M12 12.75h.008v.008H12v-.008z" /><path strokeLinecap="round" strokeLinejoin="round" d="M12 3v.01M12 21v-.01M4.05 4.05l.007.007M19.95 19.95l-.007-.007M3 12h.01M21 12h-.01M4.05 19.95l.007-.007M19.95 4.05l-.007.007" /></svg>
 );
 
+const PaintBrushIcon: React.FC<{className?: string}> = ({className}) => (
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className={className || "w-6 h-6"}><path strokeLinecap="round" strokeLinejoin="round" d="M16.862 3.487a4.5 4.5 0 016.364 6.364L9.493 23.584l-6.364-6.364L16.862 3.487zM7.5 16.5l-3 3" /></svg>
+);
+
+const ArrowsPathIcon: React.FC<{className?: string}> = ({className}) => (
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className={className || "w-6 h-6"}><path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6m0 0l-3-3m3 3l3-3M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+);
+
 // Logos
 const ACSLogo: React.FC<{className?: string}> = ({className}) => (
     <div className={className || "w-14 h-14 flex-shrink-0 flex items-center justify-center bg-gray-700 rounded-md"}>
@@ -42,48 +50,123 @@ const ProfessionalDevelopmentLogo: React.FC<{className?: string}> = ({className}
 );
 
 
-export const SKILLS_DATA: SkillCategory[] = [
-  {
-    title: 'Languages & Frameworks',
-    skills: [
-      { name: 'JavaScript', icon: <CodeBracketIcon /> },
-      { name: 'TypeScript', icon: <CodeBracketIcon /> },
-      { name: 'React / Next.js', icon: <CodeBracketIcon /> },
-      { name: 'Node.js / Express.js', icon: <CodeBracketIcon /> },
-      { name: 'Flutter / Dart', icon: <CodeBracketIcon /> },
-      { name: 'HTML5 & CSS3', icon: <CodeBracketIcon /> },
-    ],
-  },
-  {
-    title: 'Cloud & DevOps',
-    skills: [
-      { name: 'AWS (EC2, S3, RDS)', icon: <ServerStackIcon /> },
-      { name: 'Docker', icon: <ServerStackIcon /> },
-      { name: 'CI/CD (GitHub Actions)', icon: <ServerStackIcon /> },
-      { name: 'MongoDB Atlas', icon: <ServerStackIcon /> },
-      { name: 'Nginx / Linux', icon: <ServerStackIcon /> },
-    ],
-  },
-  {
-    title: 'AI/ML & Data',
-    skills: [
-      { name: 'Google Gemini API', icon: <CircleStackIcon /> },
-      { name: 'RAG Architecture', icon: <CircleStackIcon /> },
-      { name: 'JSON Mode', icon: <CircleStackIcon /> },
-      { name: 'Prompt Engineering', icon: <CircleStackIcon /> },
-      { name: 'D3.js', icon: <CircleStackIcon /> },
-    ],
-  },
-  {
-    title: 'Security & Tools',
-    skills: [
-        { name: 'XSS Sanitation / DOMPurify', icon: <WrenchScrewdriverIcon /> },
-        { name: 'OWASP Top 10', icon: <WrenchScrewdriverIcon /> },
-        { name: 'Git / VS Code', icon: <WrenchScrewdriverIcon /> },
-        { name: 'Agile/Scrum', icon: <WrenchScrewdriverIcon /> },
-    ],
-  },
-];
+export const SKILLS_DATA: any = {
+  fullstack: [
+    {
+      title: 'Languages & Frameworks',
+      skills: [
+        { name: 'JS/TS, Dart, HTML/CSS', icon: <CodeBracketIcon /> },
+        { name: 'React / Next.js', icon: <CodeBracketIcon /> },
+        { name: 'Flutter', icon: <CodeBracketIcon /> },
+        { name: 'Node.js / Express.js', icon: <CodeBracketIcon /> },
+        { name: 'Tailwind CSS, Material-UI', icon: <CodeBracketIcon /> },
+      ],
+    },
+    {
+      title: 'Backend & Databases',
+      skills: [
+        { name: 'MongoDB / Atlas', icon: <CircleStackIcon /> },
+        { name: 'RESTful APIs', icon: <CircleStackIcon /> },
+        { name: 'Authentication (JWT)', icon: <CircleStackIcon /> },
+        { name: 'SSR & Perf. Optimization', icon: <CircleStackIcon /> },
+      ],
+    },
+    {
+      title: 'Cloud & DevOps',
+      skills: [
+        { name: 'AWS (EC2, S3)', icon: <ServerStackIcon /> },
+        { name: 'Docker', icon: <ServerStackIcon /> },
+        { name: 'CI/CD (GitHub Actions)', icon: <ServerStackIcon /> },
+        { name: 'Nginx & Security', icon: <ServerStackIcon /> },
+      ],
+    },
+    {
+      title: 'Development Tools',
+      skills: [
+          { name: 'Git / GitHub', icon: <WrenchScrewdriverIcon /> },
+          { name: 'Agile/Scrum', icon: <WrenchScrewdriverIcon /> },
+          { name: 'Technical Documentation', icon: <WrenchScrewdriverIcon /> },
+          { name: 'Testing & Code Review', icon: <WrenchScrewdriverIcon /> },
+      ],
+    },
+  ],
+  frontend: [
+    {
+        title: 'Core Frontend',
+        skills: [
+            { name: 'React / Next.js', icon: <CodeBracketIcon /> },
+            { name: 'TypeScript', icon: <CodeBracketIcon /> },
+            { name: 'Flutter / Dart', icon: <CodeBracketIcon /> },
+            { name: 'Tailwind CSS', icon: <CodeBracketIcon /> },
+        ],
+    },
+    {
+        title: 'UI/UX & State',
+        skills: [
+            { name: 'UI/UX Implementation', icon: <PaintBrushIcon /> },
+            { name: 'API Integration', icon: <PaintBrushIcon /> },
+            { name: 'State Management (Context)', icon: <PaintBrushIcon /> },
+            { name: 'Component Libraries', icon: <PaintBrushIcon /> },
+        ],
+    },
+    {
+        title: 'Performance',
+        skills: [
+            { name: 'Load Time Optimization', icon: <WrenchScrewdriverIcon /> },
+            { name: 'SSR Strategies', icon: <WrenchScrewdriverIcon /> },
+            { name: 'Image Optimization', icon: <WrenchScrewdriverIcon /> },
+            { name: 'Caching Mechanisms', icon: <WrenchScrewdriverIcon /> },
+        ],
+    },
+    {
+        title: 'Tools & Platform',
+        skills: [
+            { name: 'Git / GitHub', icon: <WrenchScrewdriverIcon /> },
+            { name: 'Docker (Basics)', icon: <ServerStackIcon /> },
+            { name: 'AWS (Basics)', icon: <ServerStackIcon /> },
+            { name: 'CI/CD Awareness', icon: <ArrowsPathIcon /> },
+        ],
+    }
+  ],
+  devops: [
+    {
+        title: 'Cloud & Infrastructure',
+        skills: [
+            { name: 'AWS (EC2, S3)', icon: <ServerStackIcon /> },
+            { name: 'Infrastructure Provisioning', icon: <ServerStackIcon /> },
+            { name: 'Security Hardening', icon: <ServerStackIcon /> },
+            { name: 'Nginx', icon: <ServerStackIcon /> },
+        ],
+    },
+    {
+        title: 'CI/CD & Automation',
+        skills: [
+            { name: 'Docker', icon: <ArrowsPathIcon /> },
+            { name: 'GitHub Actions', icon: <ArrowsPathIcon /> },
+            { name: 'CI/CD Pipeline Engineering', icon: <ArrowsPathIcon /> },
+            { name: 'Automated Deployments', icon: <ArrowsPathIcon /> },
+        ],
+    },
+    {
+        title: 'Databases & Reliability',
+        skills: [
+            { name: 'MongoDB / Atlas', icon: <CircleStackIcon /> },
+            { name: 'Incident Response', icon: <CircleStackIcon /> },
+            { name: 'System Recovery', icon: <CircleStackIcon /> },
+            { name: 'Data Restoration', icon: <CircleStackIcon /> },
+        ],
+    },
+    {
+        title: 'Core Tools',
+        skills: [
+            { name: 'Git / GitHub', icon: <WrenchScrewdriverIcon /> },
+            { name: 'Bash/Shell Scripting', icon: <WrenchScrewdriverIcon /> },
+            { name: 'Technical Documentation', icon: <WrenchScrewdriverIcon /> },
+            { name: 'Stakeholder Communication', icon: <WrenchScrewdriverIcon /> },
+        ],
+    },
+  ],
+};
 
 export const EXPERIENCE_DATA: ExperienceItem[] = [
     {
