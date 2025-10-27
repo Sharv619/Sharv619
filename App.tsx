@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { useTheme } from './ThemeContext';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -10,9 +11,11 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 
 const App: React.FC = () => {
+  const { theme } = useTheme();
+
   return (
-    <div className="bg-gray-900 min-h-screen">
-      <div className="absolute inset-0 -z-10 h-full w-full bg-gray-900 bg-grid"></div>
+    <div className={`${theme === 'dark' ? 'bg-gray-900 text-gray-200' : 'bg-gray-50 text-gray-900'} min-h-screen`}>
+      <div className="absolute inset-0 -z-10 h-full w-full bg-grid"></div>
       <Header />
       <main className="container mx-auto px-4 sm:px-6 lg:px-8">
         <Hero />

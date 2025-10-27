@@ -86,7 +86,7 @@ const Projects: React.FC = () => {
 
     return (
         <section id="projects" className="py-24 scroll-mt-16">
-            <h2 className="text-4xl font-bold text-center text-gray-100 mb-16">
+            <h2 className="text-4xl font-bold text-center text-gray-900 dark:text-gray-100 mb-16">
                 My Work
             </h2>
             
@@ -98,7 +98,7 @@ const Projects: React.FC = () => {
                     {PROJECTS_DATA.map((project, index) => (
                         <div 
                             key={index} 
-                            className="project-card snap-start flex-shrink-0 w-[90%] sm:w-[48%] lg:w-[32%] bg-gray-800 rounded-xl shadow-lg group flex flex-col overflow-hidden h-[480px]"
+                            className="project-card snap-start flex-shrink-0 w-[90%] sm:w-[48%] lg:w-[32%] bg-white dark:bg-gray-800 rounded-xl shadow-lg group flex flex-col overflow-hidden h-[480px]"
                         >
                             <div className="h-48 overflow-hidden flex-shrink-0">
                                 <img 
@@ -109,11 +109,11 @@ const Projects: React.FC = () => {
                                 />
                             </div>
                             <div className="p-6 flex flex-col flex-grow">
-                                <h3 className="text-lg font-bold text-gray-100 mb-2">{project.title}</h3>
-                                <p className="text-gray-400 text-sm mt-1 flex-grow">{project.description}</p>
+                                <h3 className="text-lg font-bold text-gray-900 dark:text-gray-100 mb-2">{project.title}</h3>
+                                <p className="text-gray-700 dark:text-gray-400 text-sm mt-1 flex-grow">{project.description}</p>
                                 <div className="mt-4 flex flex-wrap gap-2">
                                     {project.tags.map(tag => (
-                                        <span key={tag} className="text-xs font-medium bg-gray-700 text-cyan-300 px-3 py-1 rounded-full border border-gray-600">
+                                        <span key={tag} className="text-xs font-medium bg-gray-200 dark:bg-gray-700 text-blue-400 dark:text-blue-300 px-3 py-1 rounded-full border border-gray-300 dark:border-gray-600">
                                             {tag}
                                         </span>
                                     ))}
@@ -123,7 +123,7 @@ const Projects: React.FC = () => {
                                         href={project.githubUrl} 
                                         target="_blank" 
                                         rel="noopener noreferrer" 
-                                        className="text-gray-400 hover:text-cyan-400 transition-colors transform hover:scale-110"
+                                        className="text-gray-700 dark:text-gray-400 hover:text-blue-400 transition-colors transform hover:scale-110"
                                         aria-label={`View ${project.title} on GitHub`}
                                     >
                                         <GithubIcon />
@@ -136,7 +136,7 @@ const Projects: React.FC = () => {
 
                 <button 
                     onClick={() => manualScroll('left')}
-                    className="absolute top-1/2 -left-4 transform -translate-y-1/2 bg-gray-700/50 hover:bg-gray-700 text-white p-3 rounded-full transition-all backdrop-blur-sm focus:outline-none focus:ring-2 focus:ring-cyan-400 z-10 hidden md:block"
+                    className="absolute top-1/2 -left-4 transform -translate-y-1/2 bg-gray-200/50 dark:bg-gray-700/50 hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-900 dark:text-white p-3 rounded-full transition-all backdrop-blur-sm focus:outline-none focus:ring-2 focus:ring-blue-400 z-10 hidden md:block"
                     aria-label="Previous projects"
                 >
                     <ChevronLeftIcon className="w-6 h-6" />
@@ -144,7 +144,7 @@ const Projects: React.FC = () => {
 
                 <button 
                     onClick={() => manualScroll('right')}
-                    className="absolute top-1/2 -right-4 transform -translate-y-1/2 bg-gray-700/50 hover:bg-gray-700 text-white p-3 rounded-full transition-all backdrop-blur-sm focus:outline-none focus:ring-2 focus:ring-cyan-400 z-10 hidden md:block"
+                    className="absolute top-1/2 -right-4 transform -translate-y-1/2 bg-gray-200/50 dark:bg-gray-700/50 hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-900 dark:text-white p-3 rounded-full transition-all backdrop-blur-sm focus:outline-none focus:ring-2 focus:ring-blue-400 z-10 hidden md:block"
                     aria-label="Next projects"
                 >
                     <ChevronRightIcon className="w-6 h-6" />

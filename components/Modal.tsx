@@ -25,20 +25,20 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, title, children }) => {
 
   return (
     <div
-      className="fixed inset-0 bg-black bg-opacity-70 z-50 flex justify-center items-center p-4"
+      className="fixed inset-0 bg-black/70 z-50 flex justify-center items-center p-4"
       onClick={onClose}
       aria-modal="true"
       role="dialog"
     >
       <div
-        className="bg-gray-800 rounded-lg shadow-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto"
+        className="bg-white dark:bg-gray-800 rounded-lg shadow-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto"
         onClick={(e) => e.stopPropagation()}
       >
-        <div className="sticky top-0 bg-gray-800/80 backdrop-blur-sm p-6 border-b border-gray-700 flex justify-between items-center">
-          <h2 className="text-2xl font-bold text-gray-100">{title}</h2>
+        <div className="sticky top-0 bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm p-6 border-b border-gray-300 dark:border-gray-700 flex justify-between items-center">
+          <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100">{title}</h2>
           <button
             onClick={onClose}
-            className="text-gray-400 hover:text-white transition-colors"
+            className="text-gray-700 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors"
             aria-label="Close modal"
           >
             <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
