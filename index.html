@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Founding Engineer Portfolio</title>
+    <title>Himanshu Lade Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,12 +13,25 @@
       body {
         font-family: 'Inter', sans-serif;
         scroll-behavior: smooth;
+        background-color: #f9fafb; /* gray-50 */
+        color: #111827; /* gray-900 */
+        transition: background-color 0.3s, color 0.3s;
+      }
+      [data-theme="dark"] body {
+        background-color: #111827; /* gray-900 */
+        color: #f9fafb; /* gray-50 */
       }
       .bg-grid {
         background-image:
-            linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
-            linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+            linear-gradient(to right, var(--grid-line-color) 1px, transparent 1px),
+            linear-gradient(to bottom, var(--grid-line-color) 1px, transparent 1px);
         background-size: 40px 40px;
+      }
+      [data-theme="dark"] {
+        --grid-line-color: rgba(255, 255, 255, 0.05);
+      }
+      [data-theme="light"] {
+        --grid-line-color: rgba(100, 100, 100, 0.08);
       }
       @keyframes fadeIn {
         from {
@@ -41,8 +54,7 @@
         scrollbar-width: none;
       }
     </style>
-
-<link rel="stylesheet" href="/index.css">
+
   <script type="importmap">
 {
   "imports": {
@@ -52,9 +64,10 @@
   }
 }
 </script>
-  <script type="module" crossorigin src="/assets/index-DCpW0KB_.js"></script>
+  <script type="module" crossorigin src="/assets/index-CW2ySUvT.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-C6G_3qQV.css">
 </head>
-  <body class="bg-gray-900 text-gray-200">
-    <div id="root"></div>
+  <body>
+    <div id="root"></div>
 </body>
 </html>
