@@ -1,17 +1,17 @@
 export const personalInfo = {
   name: "Himanshu Lade",
   title: "Full-Stack Engineer & AI/ML Specialist",
-  email: "himanshu.lade@hotmail.com",
+  email: "himanshulade@hotmail.com",
   location: "Sydney, Australia",
   bio: "I architect solutions that scale, perform, and leverage cutting-edge AI. From rescuing mission-critical databases to boosting app performance by 88%, I deliver production-ready applications with a focus on CI/CD, AI/ML integration, and robust full-stack deployment.",
-  avatar: "/avatar.jpg", // Add your photo to public/
+  avatar: "/avatar.png", // Add your photo to public/
 };
 
 export const socialLinks = {
   github: "https://github.com/Sharv619",
   linkedin: "https://linkedin.com/in/himanshu-lade",
-  twitter: "https://twitter.com/himanshu_lade",
-  email: "mailto:himanshu.lade@example.com",
+  twitter: "https://twitter.com/lifeofhimanshoe",
+  email: "mailto:himanshulade@hotmail.com",
 };
 
 export const experience = [
