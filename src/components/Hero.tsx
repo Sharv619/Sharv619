@@ -23,7 +23,7 @@ export default function Hero() {
             <div className="relative">
               <div className="w-32 h-32 sm:w-40 sm:h-40 rounded-full overflow-hidden border-4 border-white dark:border-gray-800 shadow-xl">
                 <img
-                  src="/avatar.jpg"
+                  src="/window.png"
                   alt="Himanshu Lade - Full-Stack Engineer & AI/ML Specialist"
                   className="w-full h-full object-cover"
                   onError={(e) => {
