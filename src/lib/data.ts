@@ -3,7 +3,7 @@ export const personalInfo = {
   title: "Full-Stack Engineer & AI/ML Specialist",
   email: "himanshulade@hotmail.com",
   location: "Sydney, Australia",
-  bio: "I architect solutions that scale, perform, and leverage cutting-edge AI. From rescuing mission-critical databases to boosting app performance by 88%, I deliver production-ready applications with a focus on CI/CD, AI/ML integration, and robust full-stack deployment.",
+  bio: "I'm a tech nerd who automates everything with n8n workflows and runs Ollama locally for AI experimentation. I architect solutions that scale, perform, and leverage cutting-edge AI. From rescuing mission-critical databases to engineering AI-powered solutions that actually solve real problems, I deliver production-ready applications with a focus on CI/CD, AI/ML integration, and robust full-stack deployment.",
   avatar: "/avatar.png", // Add your photo to public/
 };
 
