@@ -1,13 +1,12 @@
 "use client";
 
-import { createContext, useContext, useEffect, useLayoutEffect, useState } from "react";
+import { createContext, useContext, useEffect, useState } from "react";
 
-type Theme = "light" | "dark" | "system";
+type Theme = "light" | "dark";
 
 interface ThemeContextType {
   theme: Theme;
   setTheme: (theme: Theme) => void;
-  resolvedTheme: "light" | "dark";
 }
 
 const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
@@ -25,64 +24,38 @@ interface ThemeProviderProps {
 }
 
 export default function ThemeProvider({ children }: ThemeProviderProps) {
-  const [theme, setTheme] = useState<Theme>("system");
-  const [resolvedTheme, setResolvedTheme] = useState<"light" | "dark">("light");
+  const [theme, setTheme] = useState<Theme>("light");
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
     setMounted(true);
 
-    // Get initial theme from localStorage or default to system
+    // Get initial theme from localStorage
     const stored = localStorage.getItem("theme") as Theme;
-    if (stored && ["light", "dark", "system"].includes(stored)) {
+    if (stored === "light" || stored === "dark") {
       setTheme(stored);
     } else {
-      // Apply system theme initially
-      const systemTheme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
-      setResolvedTheme(systemTheme);
-      document.documentElement.classList.add(systemTheme);
+      // Default to light theme
+      setTheme("light");
     }
   }, []);
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     if (!mounted) return;
 
     const root = window.document.documentElement;
 
-    // Function to get system theme
-    const getSystemTheme = (): "light" | "dark" => {
-      return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
-    };
+    // Remove existing theme classes and add the new one
+    root.classList.remove('light', 'dark');
+    root.classList.add(theme);
 
-    // Function to update theme
-    const updateTheme = () => {
-      const newResolvedTheme = theme === "system" ? getSystemTheme() : theme;
-      setResolvedTheme(newResolvedTheme);
-
-      // Remove existing theme classes and add the new one
-      root.classList.remove('light', 'dark');
-      root.classList.add(newResolvedTheme);
-    };
-
-    updateTheme();
-
-    // Listen for system theme changes when theme is "system"
-    if (theme === "system") {
-      const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
-      const handleChange = () => updateTheme();
-
-      mediaQuery.addEventListener("change", handleChange);
-      return () => mediaQuery.removeEventListener("change", handleChange);
-    }
+    // Store in localStorage
+    localStorage.setItem("theme", theme);
   }, [theme, mounted]);
 
   const value = {
     theme,
-    setTheme: (newTheme: Theme) => {
-      localStorage.setItem("theme", newTheme);
-      setTheme(newTheme);
-    },
-    resolvedTheme,
+    setTheme,
   };
 
   return (

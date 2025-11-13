@@ -8,7 +8,7 @@ import { useTheme } from "./ThemeProvider";
 export default function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const { theme, setTheme, resolvedTheme } = useTheme();
+  const { theme, setTheme } = useTheme();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -69,18 +69,11 @@ export default function Navigation() {
 
             {/* Theme Toggle Button */}
             <button
-              onClick={() => {
-                const newTheme = resolvedTheme === "dark" ? "light" : "dark";
-                console.log('Switching to:', newTheme);
-                setTheme(newTheme);
-                // Force immediate DOM update
-                document.documentElement.classList.remove('light', 'dark');
-                document.documentElement.classList.add(newTheme);
-              }}
+              onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
               className="p-2 rounded-lg text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors duration-300"
-              title={`Switch to ${resolvedTheme === "dark" ? "light" : "dark"} mode`}
+              title={`Switch to ${theme === "dark" ? "light" : "dark"} mode`}
             >
-              {resolvedTheme === "dark" ? (
+              {theme === "dark" ? (
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
                 </svg>
@@ -135,10 +128,10 @@ export default function Navigation() {
               {/* Mobile Theme Toggle */}
               <div className="pt-4 border-t border-gray-200 dark:border-gray-700">
                 <button
-                  onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
+                  onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
                   className="flex items-center space-x-3 w-full text-left text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300 font-medium"
                 >
-                  {resolvedTheme === "dark" ? (
+                  {theme === "dark" ? (
                     <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
                     </svg>
@@ -147,7 +140,7 @@ export default function Navigation() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
                     </svg>
                   )}
-                  <span>Switch to {resolvedTheme === "dark" ? "light" : "dark"} mode</span>
+                  <span>Switch to {theme === "dark" ? "light" : "dark"} mode</span>
                 </button>
               </div>
             </div>
