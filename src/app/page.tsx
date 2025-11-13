@@ -1,5 +1,6 @@
 import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
+import HimanshuEdge from "@/components/HimanshuEdge";
 import About from "@/components/About";
 import Experience from "@/components/Experience";
 import Projects from "@/components/Projects";
@@ -11,6 +12,7 @@ export default function Home() {
     <div className="min-h-screen">
       <Navigation />
       <Hero />
+      <HimanshuEdge />
       <About />
       <Experience />
       <Projects />

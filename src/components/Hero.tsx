@@ -15,9 +15,9 @@ export default function Hero() {
         >
           <div className="space-y-4">
             <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold text-gray-900 dark:text-white">
-              Hi, I'm{" "}
+              {personalInfo.name}: The Engineer Who Solves Your Toughest{" "}
               <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                {personalInfo.name}
+                Full-Stack & AI Challenges
               </span>
             </h1>
             <p className="text-xl sm:text-2xl text-gray-600 dark:text-gray-300">

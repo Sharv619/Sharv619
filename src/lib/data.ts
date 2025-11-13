@@ -1,9 +1,9 @@
 export const personalInfo = {
   name: "Himanshu Lade",
-  title: "Software Engineer",
-  email: "himanshulade@hotmail.com",
+  title: "Full-Stack Engineer & AI/ML Specialist",
+  email: "himanshu.lade@hotmail.com",
   location: "Sydney, Australia",
-  bio: "Software Engineer with experience building and deploying full-stack applications. Skilled in React, Next.js, and AWS, with a focus on CI/CD, automation, and integrating AI/ML technologies to create production-ready solutions.",
+  bio: "I don't just build, I architect solutions that scale, perform, and leverage cutting-edge AI. From rescuing mission-critical databases to boosting app performance by 88%, I deliver production-ready applications with a focus on CI/CD, AI/ML integration, and robust full-stack deployment.",
   avatar: "/avatar.jpg", // Add your photo to public/
 };
 
@@ -23,10 +23,10 @@ export const experience = [
     link: "https://askjay.com.au",
   },
   {
-    company: "Professional Development",
-    position: "Self-Directed Learning",
+    company: "Innovation Lab Lead & Applied Research",
+    position: "Professional Development",
     duration: "Feb 2024 - May 2025",
-    description: "• AI/ML & DevOps Focus: Completed intensive self-directed learning in AI/ML engineering, RAG architectures, and modern DevOps practices.\n\n• Portfolio Development: Built a portfolio of 6+ production-ready applications using React, Next.js, Flutter, Gemini API, AWS, and Docker.\n\n• Advanced Skill Acquisition: Developed expertise in state management patterns, CI/CD pipelines, and offline-first PWA architectures.",
+    description: "• Pioneered AI/ML engineering & RAG architecture implementations, transforming theoretical concepts into deployable solutions.\n\n• Led the development of a portfolio of 6+ production-grade applications, demonstrating advanced proficiency in React, Next.js, Flutter, Gemini API, AWS, and Docker.\n\n• Mastered advanced state management patterns, CI/CD pipelines, and offline-first PWA architectures through hands-on development and experimentation.",
     link: "#",
   },
   {
