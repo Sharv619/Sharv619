@@ -19,7 +19,7 @@ export const experience = [
     company: "Ask Jay Services",
     position: "Software Engineer (Contract)",
     duration: "May 2025 - Oct 2025",
-    description: "• Flutter Marketplace Application: Architected and built a Flutter application from scratch with three user portals (Client, Subcontractor, Admin), implementing authentication and state management.\n\n• AWS Hands-on Experience: Gained 6 months of hands-on experience with AWS (EC2, S3, RDS) while working on the Ask Jay contract, provisioning infrastructure and managing deployments.\n\n• Mission-Critical Disaster Recovery: Led recovery following database failure, restoring 100% of application services by provisioning secure AWS EC2 infrastructure and MongoDB Atlas with zero data loss.\n\n• Performance Improvement: Achieved 88% performance improvement (25s → 3s load times) through optimization of Next.js application including server-side rendering and caching.\n\n• CI/CD Pipeline: Engineered a complete CI/CD pipeline using Docker and GitHub Actions for reliable one-command deployments.",
+    description: "• Architected and built a Flutter marketplace application from scratch with three user portals (Client, Subcontractor, Admin), implementing robust authentication and state management.\n\n• Gained 6 months of intensive hands-on experience with AWS (EC2, S3, RDS), provisioning infrastructure and managing deployments for production applications.\n\n• Successfully led mission-critical disaster recovery efforts, restoring 100% application services with zero data loss following a major database failure via secure AWS EC2 provisioning and MongoDB Atlas.\n\n• Boosted application performance by 88% (from 25s to 3s load times) through advanced Next.js server-side rendering and intelligent caching strategies.\n\n• Engineered a complete CI/CD pipeline using Docker and GitHub Actions, enabling reliable one-command deployments and automated testing.",
     link: "https://askjay.com.au",
   },
   {
@@ -33,7 +33,7 @@ export const experience = [
     company: "ACS Australian Computer Society",
     position: "Cloud Engineering Intern",
     duration: "Sep 2023 - Feb 2024",
-    description: "• Frontend Development: Contributed to a MERN + TypeScript platform for 10,000+ users, improving page load performance by 30% through React component optimization.\n\n• Security Remediation: Executed security testing based on OWASP Top 10 guidelines, implementing fixes that strengthened application security.\n\n• Agile Collaboration: Collaborated in an Agile team with senior engineers, QA, and stakeholders to deliver features on sprint schedules.",
+    description: "• Optimized frontend performance for a MERN + TypeScript platform serving 10,000+ users, achieving 30% faster page load times through strategic React component optimization.\n\n• Executed comprehensive security testing based on OWASP Top 10 guidelines, implementing critical fixes that significantly strengthened application security posture.\n\n• Collaborated effectively in an Agile development team with senior engineers, QA, and stakeholders to consistently deliver features on sprint schedules and meet project milestones.",
     link: "https://www.acs.org.au",
   },
 ];
@@ -41,21 +41,21 @@ export const experience = [
 export const projects = [
   {
     title: "AI Career Co-Pilot (RAG Architecture)",
-    description: "Built a Retrieval-Augmented Generation system embedding a 47-page knowledge base to provide contextually accurate career advice, with a real-time chat interface and Markdown export.",
+    description: "Tired of generic career advice? I engineered an AI Career Co-Pilot utilizing a RAG Architecture to embed a comprehensive 47-page knowledge base, delivering contextually accurate and personalized career guidance with a real-time chat interface.",
     technologies: ["React", "TypeScript", "Gemini API", "RAG Architecture", "localStorage"],
     liveUrl: "https://ai-career-copilot.vercel.app",
     githubUrl: "https://github.com/Sharv619/ai-career-copilot",
   },
   {
     title: "Codeflow Hook (npm package)",
-    description: "AI-Powered Code Analysis and Git Hook Management. A lightweight CLI tool that provides AI-driven code analysis, automated git hook installation, and intelligent code review capabilities using Gemini, OpenAI GPT, or Claude AI models.",
+    description: "Streamline your dev workflow with AI: Introducing Codeflow Hook, a lightweight CLI tool leveraging Gemini, OpenAI GPT, or Claude AI for intelligent code analysis, automated Git hook management, and enhanced code review capabilities.",
     technologies: ["Node.js", "TypeScript", "AI APIs", "Git Hooks", "CLI Tool"],
     liveUrl: "https://www.npmjs.com/package/codeflow-hook",
     githubUrl: "https://github.com/Sharv619/codeflow-hook",
   },
   {
     title: "Knowledge Management Pipeline & DevPath",
-    description: "Created an automated pipeline transforming unstructured notes (PDF, Markdown) into interactive D3.js knowledge graphs, packaged as an offline-first PWA with XSS protection.",
+    description: "Transform chaos into clarity: Created an automated pipeline that converts unstructured notes (PDF, Markdown) into interactive D3.js knowledge graphs, delivered as an offline-first PWA with enterprise-grade XSS protection.",
     technologies: ["React", "TypeScript", "D3.js", "Gemini API", "PWA", "DOMPurify"],
     liveUrl: "https://devpath.vercel.app",
     githubUrl: "https://github.com/Sharv619/knowledge-management",
@@ -72,9 +72,11 @@ export const skills = {
 
 export const about = {
   title: "About Me",
-  content: `Hello! I'm Himanshu, a software engineer with a background in cloud and frontend development. 
-  My focus is on building practical, end-to-end applications, from architecture to deployment.
-I love technology and have been deeply involved in self-directed learning in AI/ML engineering, RAG architectures, and modern DevOps practices. 
-I've built a portfolio of production-ready applications, developing expertise in state management, CI/CD pipelines, and offline-first PWA architectures. 
-I enjoy solving my own problems through automation - I run n8n workflows for personal automation and have Ollama running locally on my laptop for AI experimentation. I am seeking a role where I can apply this comprehensive skill set.`,
+  content: `I'm a software engineer who doesn't just write code—I architect solutions that turn complex problems into elegant, scalable realities. Ever since flashing my first custom Android ROM back in 2016, I've been obsessed with understanding how things work under the hood and finding ways to make them work better.
+
+My journey isn't about following trends; it's about pushing boundaries. I thrive in high-pressure environments where every decision matters, and I've proven I can deliver when it counts—from rescuing mission-critical systems to engineering AI-powered solutions that actually solve real problems.
+
+Beyond the professional realm, I'm constantly tinkering and experimenting. I automate my entire life with n8n workflows, run Ollama locally for AI experimentation, and treat every challenge as an opportunity to build something smarter, faster, and more resilient.
+
+I'm not looking for just any role—I'm seeking opportunities where I can apply my full-stack expertise, AI/ML innovation, and relentless problem-solving drive to build systems that matter.`,
 };

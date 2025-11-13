@@ -20,7 +20,7 @@ export default function Contact() {
           <div className="w-24 h-1 bg-blue-600 mx-auto mb-8"></div>
           <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
             I'm always interested in new opportunities and collaborations.
-            Feel free to reach out if you'd like to work together or just have a chat!
+            Whether you need to rescue a mission-critical system, architect an AI-powered solution, or build something that actually scales—let's connect.
           </p>
         </motion.div>
 
@@ -78,9 +78,9 @@ export default function Contact() {
               className="inline-flex items-center px-8 py-4 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors duration-300 shadow-lg hover:shadow-xl"
             >
               <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
               </svg>
-              Send Email
+              Let's Build Something Impactful
             </a>
           </motion.div>
         </motion.div>
