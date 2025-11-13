@@ -49,14 +49,11 @@ export default function Hero() {
           </motion.div>
 
           <div className="space-y-4">
-            <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold text-gray-900 dark:text-white">
-              Stop Your App Performance Headaches: {personalInfo.name}{" "}
-              <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                Architects 88% Faster Full-Stack & AI Solutions
-              </span>
+            <h1 className="text-5xl sm:text-7xl lg:text-8xl font-bold text-gray-900 dark:text-white">
+              {personalInfo.name}
             </h1>
-            <p className="text-xl sm:text-2xl text-gray-600 dark:text-gray-300">
-              {personalInfo.title}
+            <p className="text-xl sm:text-3xl lg:text-4xl font-semibold text-blue-600 dark:text-blue-400">
+              The Engineer Who Solves Your Toughest Full-Stack & AI Challenges
             </p>
             <p className="text-lg text-gray-500 dark:text-gray-400 max-w-2xl mx-auto">
               {personalInfo.bio}
