@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { personalInfo } from "@/lib/data";
+import { personalInfo, experience, projects, skills } from "@/lib/data";
 import ThemeProvider from "@/components/ThemeProvider";
+import AvailabilityBanner from "@/components/AvailabilityBanner";
+import SEOHead from "@/components/SEOHead";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -36,7 +38,9 @@ export default function RootLayout({
       <body
         className={`${inter.variable} font-sans antialiased`}
       >
+        <SEOHead />
         <ThemeProvider>
+          <AvailabilityBanner />
           {children}
         </ThemeProvider>
       </body>
