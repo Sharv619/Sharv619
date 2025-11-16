@@ -1,21 +1,20 @@
 # Hi there, I'm Himanshu Lade 👋
 ### Full-Stack Engineer | AI & DevOps | Building Production-Ready Tools
 
-I'm a Software Engineer who builds resilient, high-performance systems that solve real-world problems. My focus is on the intersection of full-stack development, AI integration, and DevOps automation. I thrive in high-ownership environments where I can architect and ship meaningful products from the ground up.
+I'm a Software Engineer who architects and ships resilient, high-performance systems. My focus is on the intersection of full-stack development, AI integration, and DevOps automation. I thrive in high-ownership environments, whether I'm building open-source AI tools from scratch or leading mission-critical incident response.
 
-I recently built and launched **`codeflow-hook`**, an open-source, multi-agent AI code review platform that gained **over 500 npm downloads in its first week**. This project encapsulates my passion: identifying a critical developer pain point and building a sophisticated, modern solution.
+My work is my craft. Here are the highlights.
 
 ---
 
 ### 📌 Pinned Projects
 
-Here are a few highlights of my work.
-
 | Project | Description | Key Technologies |
 | :--- | :--- | :--- |
-| 🤖 **[codeflow-hook: AI Code Review Platform](https://github.com/Sharv619/codeflow-commander---nexus-gateway)** | An open-source npm package with **500+ weekly downloads**. It's a multi-agent AI system using RAG architecture for context-aware code analysis, integrated directly into the Git workflow as a pre-commit hook. | **Node.js, TypeScript, Gemini API, RAG, Vector Embeddings, Git Hooks, Docker** |
-| 💬 **[Interactive Portfolio & AI Chatbot](https://github.com/Sharv619/your-portfolio-repo-name)** | A modern portfolio built with the latest **Next.js 16 App Router**. Features an integrated, context-aware AI chatbot powered by the **Google Gemini API** to answer questions about my career and projects. | **Next.js, React 19, TypeScript, Tailwind CSS, Framer Motion, Google AI SDK** |
-| 🔥 **[Mission-Critical System Recovery & Overhaul](link-to-private-repo-or-article-if-available)** | As the sole engineer, I led a complete disaster recovery, restoring **100% of critical data** after a production outage. I also re-architected the frontend, improving site performance by **88%** (25s to <3s). | **AWS EC2, MongoDB Atlas, Nginx, Incident Response, Performance Tuning** |
+| 🤖 **[codeflow-hook: AI Code Review Platform](https://github.com/Sharv619/codeflow-commander---nexus-gateway)** | An open-source npm package with **500+ weekly downloads**. It's a multi-agent AI system using RAG for context-aware code analysis, integrated directly into the Git workflow as a pre-commit hook. | **Node.js, TypeScript, Gemini API, RAG, Vector Embeddings, Git Hooks** |
+| 📈 **[ReliBoard: Full-Stack PM Application](https://github.com/Sharv619/your-reliboard-repo-name)** | A production-ready, enterprise-grade project management application. Features JWT-based auth with Role-Based Access Control (RBAC), a full test suite with 85%+ coverage, and is fully containerized with Docker. | **React, Node.js, TypeScript, MongoDB, Docker, JWT, Jest** |
+| 🔥 **[Mission-Critical System Recovery & Overhaul](link-to-a-private-gist-or-portfolio-page-describing-this)** | As the sole engineer, I led a complete disaster recovery, restoring **100% of critical data** after a production outage. I also re-architected the frontend, improving site performance by **88%** (25s to <3s). | **AWS EC2, MongoDB Atlas, Nginx, Incident Response, Performance Tuning** |
+| 💬 **[Interactive Portfolio & AI Chatbot](https://github.com/Sharv619/your-portfolio-repo-name)** | A modern portfolio built with the **Next.js 16 App Router**. Features an integrated, context-aware AI chatbot powered by the **Google Gemini API** to provide detailed answers about my career and projects. | **Next.js, React 19, TypeScript, Tailwind CSS, Framer Motion, Google AI SDK** |
 
 ---
 
@@ -28,7 +27,6 @@ Here are a few highlights of my work.
   <a href="https://nextjs.org/" target="_blank"><img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next.js"/></a>
   <a href="https://nodejs.org/" target="_blank"><img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js"/></a>
   <a href="https://www.python.org/" target="_blank"><img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"/></a>
-  <a href="https://flutter.dev/" target="_blank"><img src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white" alt="Flutter"/></a>
 </p>
 
 **AI, Cloud & DevOps:**
@@ -38,7 +36,6 @@ Here are a few highlights of my work.
   <a href="https://www.docker.com/" target="_blank"><img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker"/></a>
   <a href="https://github.com/features/actions" target="_blank"><img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white" alt="GitHub Actions"/></a>
   <a href="https://www.mongodb.com/cloud/atlas" target="_blank"><img src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB"/></a>
-  <a href="https://git-scm.com/" target="_blank"><img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git"/></a>
 </p>
 
 ---
