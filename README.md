@@ -1,8 +1,9 @@
 # Hi there, I'm Himanshu Lade 👋
 ### Full-Stack Engineer | AI & DevOps | Building Production-Ready Tools
 
-I'm a Software Engineer who architects and ships resilient, high-performance systems. My focus is on the intersection of full-stack development, AI integration, and DevOps automation. I thrive in high-ownership environments, whether I'm building open-source AI tools from scratch or leading mission-critical incident response.
+I’m early in my career, but I’ve had hands-on exposure to full-stack development, AI integrations, and DevOps workflows. I’ve worked as a sole engineer on small systems, handled production incidents, and built tools to reduce repeat mistakes rather than just patching symptoms.
 
+I’m still learning, but I care deeply about reliability, clarity, and shipping things that actually work.
 My work is my craft. Here are the highlights.
 
 ---
